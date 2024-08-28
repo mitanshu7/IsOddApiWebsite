@@ -1,13 +1,13 @@
 Build the image:
 
 ```sh
-docker build -t my-static-website .
+docker build --tag isoddapiwebsite .
 ```
 
 Run the image:
 
 ```sh
-docker run -it --rm -p 3000:3000 my-static-website
+docker run --name isoddapiwebsite -d -p 5011:3000 isoddapiwebsite
 ```
 
-Browse to `http://localhost:3000`.
+Browse to `http://localhost:5011`.
